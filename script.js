@@ -2,12 +2,13 @@ function fibonacci(num) {
 // your code here
 	let firstNum = 0;
 	let secondNum = 1;
+	let thirdNum = num;
 	for(i=1; i<=num; i++){
-		num = firstNum + secondNum;
+		thirdNum = firstNum + secondNum;
 		firstNum = secondNum;
-		secondNum = num;
+		secondNum = thirdNum;
 	}
-	return num;
+	return thirdNum;
 }
 
 module.exports = fibonacci;
